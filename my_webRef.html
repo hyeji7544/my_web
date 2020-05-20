@@ -4,58 +4,30 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Hyeji 2020</title>
-		<style>
-		.page {
-			max-width: 960px;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-		.contents {
-			display: flex;
-			justify-content: space-around;
-		}
-		a {
-			text-decoration:none;
-		}
-		h1 {
-			margin-top: 30px;
-			margin-bottom: 30px;
-			font-size: 40px;
-		}
-		h3 {
-			text-align: left;
-			margin-top: 50px;
-			margin-left: 90px;
-		}
-		ul {
-			text-align: left;
-			margin-left: 90px;
-			line-height: 2.5em;
-			font-size: 14px;
-		}
-		</style>
+		<link rel="stylesheet" href="my_web_style.css">
 	</head>
 
 	<body>
-		<div class="page">
-
+		<div id="header">
+			<p></p>
 			<h1><a href="my_web.html">Year 2020 Project</a></h1>
-			<div class="contents">
-				<a href="my_web1.html">How It All Began</a>
-				<a href="my_web2.html">Make Hobby Habit Routine</a>
-				<a href="my_web3.html">Regular Schedule</a>
-				<a href="my_webRef.html">Coding Reference</a>
-			</div>
-		
-			<h3>Reference to coding materials<h3>
+		</div>
 
-				<ul>
+		<div id="grid">
+			<ul id="contents">
+				<li for="contents"><a href="my_web1.html">How It All Began</a></li>
+				<li for="contents"><a href="my_web2.html">Make Hobby Habit Routine</a></li>
+				<li for="contents"><a href="my_web3.html">Regular Schedule</a></li>
+				<li for="contents"><a href="my_webRef.html">Coding Reference</a></li>
+			</ul>
+			<div id="article">
+				<h3 id="referenceHead">Useful coding reference websites</h3>
+				<ul id="references">
 					<li>Very useful website to learn various languages <a href="https://opentutorials.org/">here</a></li>
 					<li>Good HTML tutorial on youtube<br><iframe width="560" height="315" src="https://www.youtube.com/embed/bTSDDyuMuUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
 				</ul>
-
+			</div>
 		</div>
+
 	</body>
 </html>
