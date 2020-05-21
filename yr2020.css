@@ -58,8 +58,8 @@ body {
 		#grid #article #references li {
 			padding-bottom: 50px;
 		}
-		#grid #article #checkboxes label {
-			padding-left: 10px;
+		#grid #article #habitButton {
+			font-size: 20px;
 		}
 		@media(max-width:950px){
 			#header {
