@@ -4,6 +4,15 @@ body {
 		a {
 			text-decoration:none;
 		}
+		a:link, a:visited {
+ 			 color:lightslategrey;
+		}
+		a:hover {
+			color: darkslategrey;
+		}
+		a.activePg {
+			color: darkslategrey;
+		}
 		#header {
 			display: grid;
 			grid-template-columns: 1fr 4.3fr;
@@ -24,7 +33,7 @@ body {
 			padding: 20px 45px 20px 0;
 			margin: 0;
 			text-align: right;
-			border-right: solid 1px purple;
+			border-right: solid 1px lightslategrey;
 		}
 		#grid #contents li {
 			padding-bottom: 100px;
@@ -58,8 +67,8 @@ body {
 		#grid #article #references li {
 			padding-bottom: 50px;
 		}
-		#grid #article #habitButton {
-			font-size: 20px;
+		#grid #article #habitInput {
+			
 		}
 		@media(max-width:950px){
 			#header {

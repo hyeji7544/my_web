@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Hyeji 2020</title>
+		<script src="/Users/hyejikim/hyeji/study/yr2020/yr2020.js"></script>
 		<link rel="stylesheet" href="yr2020.css">
 	</head>
 	<body>
@@ -14,23 +15,62 @@
 		<div id="grid">
 			<ul id="contents">
 				<li for="contents"><a href="1_beginning.html">How It All Began</a></li>
-				<li for="contents"><a href="2_habit.html">Make Hobby Habit Routine</a></li>
+				<li for="contents"><a href="2_habit.html" class="activePg">Make Hobby Habit Routine</a></li>
 				<li for="contents"><a href="3_schedule.html">Regular Schedule</a></li>
 				<li for="contents"><a href="4_codeRef.html">Coding Reference</a></li>
 			</ul>
 			<div id="article">
 				<img src="https://images.unsplash.com/photo-1423686946622-cc584d79aa25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80" width="80%">
-				<p id="habitButton">
-					<input type="button" id="book" value="Read books of interest and leave review" onclick="alert('😘❤️')"><br>
-					<input type="button" id="bible" value="Bible study everyday" onclick="alert('😘❤️')"><br>
-					<input type="button" id="journal" value="Write journals" onclick="alert('😘❤️')"><br>
-					<input type="button" id="picture" value="Take pictures" onclick="alert('😘❤️')"><br>
-					<input type="button" id="workout" value="Workout >=3 a week" onclick="alert('😘❤️')"><br>
-					<input type="button" id="trip" value="Weekend beach walk/short trip" onclick="alert('😘❤️')"><br>
-					<input type="button" id="cafe" value="Try new cafe/restaurant" onclick="alert('😘❤️')"><br>
-					<input type="button" id="friend" value="Catch up with friends" onclick="alert('😘❤️')"><br>
-					<input type="button" id="elective" value="Learn electives 2hrs per week e.g.Ted, Tutorial" onclick="alert('😘❤️')">
+				
+				<p id="habitInput">
+
+					<label>Read books of interest and leave review</label>
+					<input id="book" type="text">
+					<input type="button" value="Add" onclick="myf()">
+					<div id="bookInput"></div>
+
+					<label for="bible">Bible study everyday</label>
+					<input id="bible" type="text">
+					<input id="bible" type="button" value="Add" onclick="myf()">
+					<div for="bible"></div><br>
+					
+					<label for="journal">Write journals</label>
+					<input id="journal" type="text">
+					<input id="journal" type="button" value="Add" onclick="myf()">
+					<div for="journal"></div><br>
+					
+					<label for="picture">Take pictures</label>
+					<input id="picture" type="text">
+					<input id="picture" type="button" value="Add" onclick="myf()">
+					<div for="picture"></div><br>
+					
+					<label for="workout">Workout >=3 a week</label>
+					<input id="workout" type="text">
+					<input id="workout" type="button" value="Add" onclick="myf()">
+					<div for="workout"></div><br>
+					
+					<label for="trip">Weekend beach walk/short trip</label>
+					<input id="trip" type="text">
+					<input id="trip" type="button" value="Add" onclick="myf()">
+					<div for="trip"></div><br>
+					
+					<label for="cafe">Try new cafe/restaurant</label>
+					<input id="cafe" type="text">
+					<input id="cafe" type="button" value="Add" onclick="myf()">
+					<div for="cafe"></div><br>
+					
+					<label for="friend">Catch up with friends</label>
+					<input id="friend" type="text">
+					<input id="friend" type="button" value="Add" onclick="myf()">
+					<div for="friend"></div><br>
+					
+					<label for="elective">Learn electives 2hrs per week e.g.Ted, Tutorial</label>
+					<input id="elective" type="text">
+					<input id="elective" type="button" value="Add" onclick="myf()">
+					<div for="elective"></div>
+
 				</p>
+
 			</div>
 		</div>
 
