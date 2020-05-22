@@ -67,9 +67,6 @@ body {
 		#grid #article #references li {
 			padding-bottom: 50px;
 		}
-		#grid #article #habitInput {
-			
-		}
 		@media(max-width:950px){
 			#header {
 				display: block;
