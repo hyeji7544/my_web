@@ -1,4 +1,17 @@
-function habitTxt(self) {
+
+var buttons = {
+	setTxtColor:function (self, color){
+	self.style.color = color;
+	},
+	setBGColor:function (self, color){
+	self.style.backgroundColor = color;
+	},
+	setBorder:function (self, property){
+		self.style.border = property;
+	}
+};
+
+function habitDesc(self) {
 	var habits = [
 	'Read books of interest and leave review'
 	,'Bible study everyday'
@@ -13,22 +26,24 @@ function habitTxt(self) {
 	var i = 0;
 	while(i < habits.length){
 		if(self.value === habits[i]){
-			habitDesc = habits[i];
+			desc = habits[i];
 			break;
 		} else {
 			i = i + 1;
 		}
 	};
-}
+};
 
-
-function txtChanger(self) {
-	habitTxt(self);
-	if(self.value === habitDesc){
-		self.style.color='hotpink';
+function habitDescChanger(self) {
+	habitDesc(self);
+	if(self.value === desc){
+		buttons.setTxtColor(self,'hotpink');
+		buttons.setBGColor(self,'honeydew');
+		buttons.setBorder(self,'thin solid black');
 		self.value = 'Superb 💕';
 	} else {
-		self.style.color='black';
-		self.value = habitDesc;
+		buttons.setTxtColor(self,'black');
+		buttons.setBGColor(self,'white');
+		self.value = desc;
 	};
-}
+};
